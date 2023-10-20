@@ -12,16 +12,13 @@ public class ArrayTask1475Test {
     @Test (dataProvider = "Arrays")
     public void testFinalPrice(int [] first, int [] second) {
         ArrayTask1475 arrayTask1475 = new ArrayTask1475();
-//        int[] first = {8,4,6,2,3};
-//        int[] second = {4,2,4,2,3};
-        System.out.println("first: ");
+        System.out.print("first: ");
         printArray(first);
-        System.out.println("final: ");
+        System.out.print("final: ");
         printArray(arrayTask1475.finalPrice(first));
-        System.out.println("Expected: ");
+        System.out.print("Expected: ");
         printArray(second);
         assertEquals(second, arrayTask1475.finalPrice(first));
-
     }
 
     public static void printArray(int[] arr) {
